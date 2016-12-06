@@ -443,7 +443,7 @@ run_puppet() {
   export LC_ALL=en_GB.utf8
   echo ""
   echo "Running puppet apply"
-  puppet apply /etc/puppet/manifests/site.pp --detailed-exitcodes
+  puppet apply /etc/puppet/manifests/site.pp --detailed-exitcodes --parser future
 
   PUPPET_EXIT=$?
 
